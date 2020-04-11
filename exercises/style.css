@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+:root {
+    --green: rgb(0, 116, 48);
+}
+
 body {
     font-family: "franklin-gothic-urw", sans-serif;
     padding: 5%;
@@ -38,4 +42,15 @@ h3 {
 
 ul {
     margin-left: 1em;
+}
+
+.welcome {
+    color: var(--green);
+    border: 1px solid var(--green);
+    display: block;
+    padding: .6rem;
+    border-radius: 2px;
+    max-width: 22em;
+    margin-bottom: 3rem;
+    hyphens: auto;
 }
