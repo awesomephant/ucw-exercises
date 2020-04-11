@@ -1,0 +1,14 @@
+{
+    "name": "ucw-exercises",
+    "description": "",
+    "authors": "Max Kohler",
+    "version": "1.0.0",
+    "main": "",
+    "scripts": {
+        "start": "gulp default"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "gulp": "^4.0.2"
+    }
+}
