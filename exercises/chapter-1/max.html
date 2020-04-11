@@ -1,25 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max</title>
     <link rel="stylesheet" href="./chapter-1.css">
 </head>
+
 <body>
     <canvas id='world'></canvas>
     <script>
         function draw() {
             const el = document.querySelector('#world')
             const c = el.getContext('2d')
-            document.body.appendChild(el) 
-        
+            document.body.appendChild(el)
+
             c.canvas.width = window.innerWidth - 100;
             c.canvas.height = window.innerHeight - 100;
-        
+
             c.fillStyle = 'hsl(16,70%,81%)'
             c.fillRect(100, 100, 1000, 1000)
-            
+
             c.fillStyle = 'hsl(59,80%,51%)'
             c.fillRect(120, 300, 500, 404)
 
@@ -33,7 +35,7 @@
 
             c.fillStyle = 'hsl(189,80%,19%)'
             c.fillRect(500, 280, 500, 20)
-            
+
             c.fillStyle = 'hsl(219,80%,21%)'
             c.fillRect(500, 360, 500, 40)
             c.fillRect(500, 460, 500, 410)
@@ -43,4 +45,5 @@
 
     </script>
 </body>
+
 </html>
