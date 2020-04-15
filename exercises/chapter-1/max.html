@@ -7,8 +7,8 @@
 <body>
     <canvas id='world'></canvas>
     <script>
-        const el = document.querySelector('#world')
-        const c = el.getContext('2d')
+        let el = document.querySelector('#world')
+        let c = el.getContext('2d')
 
         c.canvas.width = window.innerWidth - 100;
         c.canvas.height = window.innerHeight - 100;
