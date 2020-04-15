@@ -1,48 +1,51 @@
 <!doctype html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max</title>
-    <link rel="stylesheet" href="./chapter-1.css">
 </head>
 
 <body>
     <canvas id='world'></canvas>
     <script>
-        function draw() {
-            const el = document.querySelector('#world')
-            const c = el.getContext('2d')
-            document.body.appendChild(el)
+        const el = document.querySelector('#world')
+        const c = el.getContext('2d')
 
-            c.canvas.width = window.innerWidth - 100;
-            c.canvas.height = window.innerHeight - 100;
+        c.canvas.width = window.innerWidth - 100;
+        c.canvas.height = window.innerHeight - 100;
 
-            c.fillStyle = 'hsl(16,70%,81%)'
-            c.fillRect(100, 100, 1000, 1000)
+        // Sky
+        c.fillStyle = 'rgb(127,163,226)'
+        c.fillRect(120, 120, 900, 800)
 
-            c.fillStyle = 'hsl(59,80%,51%)'
-            c.fillRect(120, 300, 500, 404)
+        c.fillStyle = 'rgb(137,173,236)'
+        c.fillRect(120, 300, 900, 500)
 
-            c.fillStyle = 'hsl(169,80%,11%)'
-            c.fillRect(500, 190, 500, 1)
-            c.fillRect(500, 200, 500, 2)
+        c.fillStyle = 'rgb(147,183,246)'
+        c.fillRect(120, 400, 900, 500)
+        
+        // House
+        c.fillStyle = 'rgb(160,147,128)'
+        c.fillRect(120, 700, 900, 400)
+        
+        // Roof
+        c.fillStyle = 'rgb(120,117,108)'
+        c.fillRect(120, 520, 900, 200)
+        
+        // Trees
+        c.fillStyle = 'rgb(44,157,87)'
+        c.fillRect(120, 600, 300, 200)
+        c.fillRect(320, 700, 300, 200)
+        c.fillRect(720, 600, 300, 200)
 
-            c.fillStyle = 'hsl(179,80%,15%)'
-            c.fillRect(500, 220, 500, 4)
-            c.fillRect(500, 240, 500, 8)
-
-            c.fillStyle = 'hsl(189,80%,19%)'
-            c.fillRect(500, 280, 500, 20)
-
-            c.fillStyle = 'hsl(219,80%,21%)'
-            c.fillRect(500, 360, 500, 40)
-            c.fillRect(500, 460, 500, 410)
-        }
-
-        draw()
-
+        // Window
+        c.fillStyle = 'rgb(210,210, 255)'
+        c.fillRect(120, 120, 40, 900)
+        c.fillRect(980, 120, 40, 900)
+        c.fillRect(120, 120, 900, 40)
+        c.fillRect(120, 620, 900, 40)
+        c.fillRect(120, 420, 900, 40)
+        c.fillRect(120, 920, 900, 40)
+        c.fillRect(120, 1020, 900, 90)
     </script>
 </body>
 
